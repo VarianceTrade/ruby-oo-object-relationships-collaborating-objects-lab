@@ -64,6 +64,17 @@ describe 'Song' do
       expect(song.artist).to be_an(Artist)
       expect(song.artist.name).to eq("Michael Jackson")
 
+      # song = Songe.new("Man in the Mirror")
+      # artist = Artist.new("Michael Jackson") # create artist
+      # song.artist = artist # assign artist to song's artist attribute
+
+      # puts song.artist.name # "Michael Jacson"
+
+      # song  = Song.new("Man in the Mirror")
+      # song.artist_name = "Michael Jackson"
+
+      # puts song.artist.name # "Michael Jacson"
+
       song_2 = Song.new('Thriller')
       song_2.artist_name = "Michael Jackson"
       expect(song_2.artist).to be_an(Artist)
